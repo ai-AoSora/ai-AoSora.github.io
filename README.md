@@ -1,2 +1,2 @@
-# ai-luce.github.io
+# ai-AoSora
 AIの研究
