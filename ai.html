@@ -1,8 +1,22 @@
-<head>
-  <title>Ai 青空</title>
-  <meta charset="UTF-8">
-</head>
-<body>
-  <h2>Ai 青空</h2>
-  <input type="text">
-</body>
+<!DOCTYPEhtml>
+<html lang="ja">
+  <head>
+    <title>Ai 青空</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,iniial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+    <h2>Ai 青空</h2>
+    <div class="input-area">
+      <input type="text" required name="input-text" id="input-textarea" class="input-text">
+      <button type="submit" class="btn-text-submit"><span class="material-symbols-outlined">send</span></button>
+    </div>
+    <style>
+      .input-area{ width:70%; height:max-content; display:flex; flex-direction:row; align-items:center; justify-content:center; position:fixed; bottom:10px; padding:3px; margin:5px; border:1px solid #000; border-radius:20px; box-shadow:0px 2px 5px 1px #8A8C8E; }
+      .input-text{ width:80%; }
+      .btn-text-submit{ border-radius:50%; width:30px; height:30px; padding:0; margin:5px; }
+      .btn-text-submit material-symbols-outlined{ font-size:20px; padding:0; margin:0; }
+    </style>
+  </body>
+</html>
