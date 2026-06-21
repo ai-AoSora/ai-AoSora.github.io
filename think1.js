@@ -6,9 +6,10 @@ function send_question (input_text){
   if(clear_input.includes(key)){
     const response = BasicDictionary[key];
     const random_response = Math.floor(Math.random() * response.length);/* 辞書のリスト内からランダムで言葉選び */
+    const response_data = response[random_response];
     // 出力準備
     console.log(random_response);/* テスト：コンソールに表示 */
-    return response[random_response];/* 戻り値で選んだ言葉を戻す */
+    return response_data;/* 戻り値で選んだ言葉を戻す */
     }
   }
   return　"404エラー"
