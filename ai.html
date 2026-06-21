@@ -11,8 +11,8 @@
   <body>
     <h2>Ai 青空</h2>
     <div class="input-area">
-      <form action="" onsubmit="event.preventDefault();/* 送信時にページのリロードを防止 */">
-        <input type="text" placeholder="ここに文章を入力..." required name="input-text" id="input-textarea" class="input-text" onchange="send_question(this.value);">
+      <form action="" onsubmit="event.preventDefault();/* 送信時にページのリロードを防止 */ send_question(document.getElementById('input-textarea').value);/* 入力データを取得して関数呼び出し */">
+        <input type="text" placeholder="ここに文章を入力..." required name="input-text" id="input-textarea" class="input-text">
         <button type="submit" class="btn-text-submit" ><span class="material-symbols-outlined">send</span></button>
       </form>
     </div>
