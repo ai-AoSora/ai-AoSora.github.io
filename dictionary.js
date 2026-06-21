@@ -1,3 +1,3 @@
-const basic-dictionary = {
+const BasicDictionary = {
   "こんにちは":["こんにちは！何か質問はありますか？","こんにちは！気分はどうですか？"]
 };
