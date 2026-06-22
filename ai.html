@@ -10,6 +10,14 @@
   </head>
   <body>
     <h2>Ai 青空</h2>
+    <div class="talk-area">
+      <div class="start-menu">
+        <h2>こんにちは、ai青空です。</h2>
+        <p>まずはこんな質問から</p>
+        <button>こんにちは</button><button>今何時？</button>
+      </div>
+      <div id="talk_message"></div>
+    </div>
     <div class="input-area">
       <form action="" class="input-form-area" onsubmit="event.preventDefault();/* 送信時にページのリロードを防止 */ send_question(document.getElementById('input-textarea').value);/* 入力データを取得して関数呼び出し */">
         <input type="text" placeholder="ここに文章を入力..." required name="input-text" id="input-textarea" class="input-text">
@@ -26,6 +34,8 @@
       .btn-text-submit:hover{ background-color:#1e8be8; }
       .btn-text-submit:active{ background-color:#0269c2; }
       .btn-text-submit .material-symbols-outlined{ font-size:20px; padding:0; margin:0; color:#fff; }
+      
+      .talk-area{ width:100%; height:100%; margin:0; padding:0; display:flex; flex-direction:column; aling-items:center; judtify-content:center; flex-wrap:wrap; overflow-y:auto; -webkit-overflow-scrolling:touch; }
     </style>
   </body>
 </html>
