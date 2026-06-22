@@ -7,7 +7,10 @@ function send_question (input_text){
     const response = BasicDictionary[key];
     const random_response = Math.floor(Math.random() * response.length);/* 辞書のリスト内からランダムで言葉選び */
     const response_data = response[random_response];
-    // 出力準備
+    // 出力
+    const output_area = document.getElementById('talk_message');
+    const output_text_html = `<p>${response_data}</p>`;
+    output_area.innerHTML = output_text_html;
     console.log(response_data);/* テスト：コンソールに表示 */
     return response_data;/* 戻り値で選んだ言葉を戻す */
     }
