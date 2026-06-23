@@ -11,7 +11,7 @@ function send_question (input_text){
     // 出力
     const output_area = document.getElementById('talk_message');
     const output_text_html = `<p>${response_data}</p>`;
-    output_text_all_html = output_text_all_html + 'output_text_html';/* 全てのデータ+今回のデータ */
+    output_text_all_html = output_text_all_html + output_text_html;/* 全てのデータ+今回のデータ */
     output_area.innerHTML = output_text_all_html;
     
     console.log(response_data);/* テスト：コンソールに表示 */
