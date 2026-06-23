@@ -10,7 +10,9 @@ function send_question (input_text){
     const response_data = response[random_response];
     // 出力
     const output_area = document.getElementById('talk_message');
-    const output_text_html = `<p>${response_data}</p>`;
+    const output_text_html = `
+    <div class="ai-response-text"><p>${response_data}</p></div>
+    `;
     output_text_all_html = output_text_all_html + output_text_html;/* 全てのデータ+今回のデータ */
     output_area.innerHTML = output_text_all_html;
     
