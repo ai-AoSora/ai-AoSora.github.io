@@ -1,3 +1,4 @@
+let output_text_all_html = '';
 function send_question (input_text){
   // 前処理 最初の余分なスペースを削る
   const clear_input = input_text.trim();
@@ -10,7 +11,9 @@ function send_question (input_text){
     // 出力
     const output_area = document.getElementById('talk_message');
     const output_text_html = `<p>${response_data}</p>`;
-    output_area.innerHTML = output_text_html;
+    output_text_all_html = output_text_all_html + 'output_text_html';/* 全てのデータ+今回のデータ */
+    output_area.innerHTML = output_text_all_html;
+    
     console.log(response_data);/* テスト：コンソールに表示 */
     return response_data;/* 戻り値で選んだ言葉を戻す */
     }
