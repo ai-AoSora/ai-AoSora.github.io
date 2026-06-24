@@ -1,4 +1,15 @@
 let output_text_all_html = '';
+
+function I_send_text(){
+event.preventDefault();/* 送信時にページのリロードを防止 */ 
+send_question(document.getElementById('input-textarea').value);/* 入力データを取得して関数呼び出し */
+        
+const output_area = document.getElementById('talk_message');
+const input_text_html = `<div class='I-send-text'><p>${document.getElementById('input-textarea').value}</p></div>`;
+output_text_all_html = output_text_all_html + input_text_html;/* 全てのデータ+今回のデータ */
+output_area.innerHTML = input_text_all_html;
+};
+
 function send_question (input_text){
   // 前処理 最初の余分なスペースを削る
   const clear_input = input_text.trim();
