@@ -6,7 +6,7 @@ event.preventDefault();/* 送信時にページのリロードを防止 */
 const output_area = document.getElementById('talk_message');
 const input_text_html = `<div class='I-send-text'><p>${document.getElementById('input-textarea').value}</p></div>`;
 output_text_all_html = output_text_all_html + input_text_html;/* 全てのデータ+今回のデータ */
-output_area.innerHTML = input_text_all_html;
+output_area.innerHTML = output_text_all_html;
 
 //aiへ返信してのパスを出す
 send_question(document.getElementById('input-textarea').value);/* 入力データを取得して関数呼び出し */
