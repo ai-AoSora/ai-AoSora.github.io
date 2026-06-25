@@ -1,9 +1,9 @@
 let output_text_all_html = '';
-const output_area = document.getElementById('talk_message');
 
 function I_send_text(){
 event.preventDefault();/* 送信時にページのリロードを防止 */ 
-        
+
+const output_area = document.getElementById('talk_message');
 const input_text_html = `<div class='I-send-text'><p>${document.getElementById('input-textarea').value}</p></div>`;
 output_text_all_html = output_text_all_html + input_text_html;/* 全てのデータ+今回のデータ */
 output_area.innerHTML = input_text_all_html;
@@ -22,6 +22,7 @@ function send_question (input_text){
     const random_response = Math.floor(Math.random() * response.length);/* 辞書のリスト内からランダムで言葉選び */
     const response_data = response[random_response];
     // 出力
+    const output_area = document.getElementById('talk_message');
     const output_text_html = `
     <div class="ai-response-text"><p>${response_data}</p></div>
     `;
